@@ -19,6 +19,7 @@
     background: #faf4f4;
     border-radius: 10px;
     vertical-align:bottom;
+    margin: 0 10px 10px 10px;
 }
 .image1{
     width: 100px;
@@ -28,6 +29,7 @@
     background: url(img/sha0_lin.jpg);
     background-size: 100%;
     background-position: center;
+    
     
 }
 
@@ -72,8 +74,10 @@
     background: url(img/GOD.jpg);
     background-size: 100%;
     background-position: center;
-    
 }
-.first__replie{
-    height: 250px;
+
+@media screen and (max-width: 706px) {
+    .text__replie{
+        margin: 10px;
+    }
 }
