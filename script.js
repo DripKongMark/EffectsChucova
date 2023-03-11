@@ -271,4 +271,3 @@ class ItcAccordion {
 	  el.classList.contains('accordion__item_show') ? this.hide(el) : this.show(el);
 	}
   }
-  
