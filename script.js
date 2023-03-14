@@ -271,3 +271,14 @@ class ItcAccordion {
 	  el.classList.contains('accordion__item_show') ? this.hide(el) : this.show(el);
 	}
   }
+  
+
+  //Burger-menu
+  $(document).ready(function() {
+	$('.burger-menu__inner').click(function(event) {
+		$('.burger-menu__inner,.burger-menu,.navbar').toggleClass('active');
+	});
+	$('.burger-menu__inner.active').click(function(event) {
+		$('.burger-menu__inner').toggleClass('');
+	});
+  });
