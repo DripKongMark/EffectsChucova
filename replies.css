@@ -13,14 +13,22 @@
 
 .text__replie{
     height: auto;
-    max-width: 500px;
+    max-width: 700px;
     position: relative;
     padding: 10px;
-    background: #faf4f4;
+    background: rgb(87,87,90);
     border-radius: 10px;
     vertical-align:bottom;
     margin: 0 10px 10px 10px;
 }
+
+.seventh__replie{
+    max-width: 1000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .image1{
     width: 100px;
     height: 100px;
@@ -49,7 +57,7 @@
     height: 100px;
     margin-right: 10px;
     border-radius: 100%;
-    background: url(img/BabaScript.jpg);
+    background: url(img/Shark.jpg);
     background-size: 100%;
     background-position: center;
     
@@ -60,13 +68,24 @@
     height: 100px;
     margin-right: 10px;
     border-radius: 100%;
-    background: url(img/Pogiloy\ Harden.jpg);
+    background: url(img/BabaScript.jpg);
     background-size: 100%;
     background-position: center;
     
 }
 
 .image5{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/Pogiloy\ Harden.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+.image6{
     width: 100px;
     height: 100px;
     margin-right: 10px;

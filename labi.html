@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chukov's Effect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="labi.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="burger-menu__inner">
+            <span></span><span></span><span></span>
+          </div>
+        <div class="burger-menu">
+          <a href="index.html">Главная</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="interesting_facts.html">Интересные факты</a></li>
+          <a href="replies.html">Отзывы</a>
+          <a href="labi.html">Лабы</a>
+          <a href="mailto:gorbun.hog@gmail.ru">FAQ</a>
+          <a href="#" class="right">Войти</a>
+        </div>
+      </div>
+
+    num_one = parseInt(num_one); 
+                        num_two = parseInt(num_two); 
+                        num_three = parseInt(num_three); 
+                        num_four = parseInt(num_four); 
+ 
+ 
+                        if(num_one != num_two) 
+                        { 
+                            if(num_one != num_three) 
+                            { 
+                                if(num_one != num_four) 
+                                { 
+                                    alert(' Первое число отлично от других, позиция 1 ') 
+                                } 
+                            } 
+                        } 
+ 
+                        if(num_two != num_one) 
+                        { 
+                            if(num_two != num_three) 
+                            { 
+                                if(num_two != num_four) 
+                                { 
+                                    alert(' Второе число отлично от других, позиция 2 ') 
+                                } 
+                            } 
+                        } 
+ 
+ 
+                        if(num_three != num_one) 
+                        { 
+                            if(num_three != num_two) 
+                            { 
+                                if(num_three != num_four) 
+                                { 
+                                    alert(' Третье число отлично от других, позиция 3 ') 
+                                } 
+                            } 
+                        } 
+ 
+                        if(num_four != num_one) 
+                        { 
+                            if(num_four != num_two) 
+                            { 
+                                if(num_four != num_three) 
+                                { 
+                                    alert(' Четвертое число отлично от других, позиция 4 ') 
+                                } 
+                            } 
+                        } 
+                    </textarea> 
+                     
+                     <div class='lab_work_start' id='button2_2'> 
+                         <p>Выполнить</p> 
+                    </div> 
+                </div> 
+            </div> 
+             
+             
+             
+            <div class='lab_work_2_3'> 
+                <div class='lab_work_2_text'> 
+                    В лабораторной работе №2 задании 3 <br> 
+                    нужно было написать программу которая решала систему уравнений через оператор if 
+                </div> 
+                 
+                <div class='lab_work_2_code'> 
+                    <p class='lab_work_inner'>Код для задания 3</p> 
+                    <textarea> 
+                         
+                         
+                         
+                         
+                         
+                        var x = prompt('Введи x '); 
+                        var y; 
+                        var a = 3.9; 
+                        var b = 2.4; 
+ 
+                        x = parseFloat(x); 
+                        a = parseFloat(a); 
+                        b = parseFloat(b); 
+ 
+                        if(x <= 3) 
+                        { 
+                            y = (a + x) / (1 + Math.sqrt(Math.abs(x))); 
+                        } 
+ 
+                        if(3 < x) 
+                        { 
+                            if(x <= 5) 
+                            { 
+                                y = Math.log( (a * x) + (b * x * x) ); 
+                            } 
+                        } 
+ 
+                        if(x > 5) 
+                        { 
+                            y = Math.exp(b + x); 
+                        } 
+ 
+                        alert( 'y(x) = ' + y ); 
+                    </textarea> 
+                     
+                     <div class='lab_work_start' id='button2_3'>
+                        <p>Выполнить</p> 
+                    </div> 
+                </div> 
+            </div> 
+             
+             
+            <div class='lab_work_2_4'> 
+                <div class='lab_work_2_text'> 
+                    В лабораторной работе №2 задании 4 <br> 
+                    нужно было написать программу которая решала систему уравнений через оператор switch case 
+                </div> 
+                 
+                <div class='lab_work_2_code'> 
+                    <p class='lab_work_inner'>Код для задания 4</p> 
+                    <textarea> 
+                         
+                         
+                         
+                         
+                         
+                        var x = prompt('Введи x'); 
+                        var y; 
+                        var a = 3.9; 
+                        var b = 2.4; 
+                        x = parseInt(x); 
+                        a = parseFloat(a); 
+                        b = parseFloat(b); 
+                        switch(x) 
+                        { 
+ 
+                        case 3: 
+                            y = (a + x) / (1 + Math.sqrt(Math.abs(x))); 
+                            break; 
+ 
+                        case 5: 
+                            y = Math.log( (a * x) + (b * x * x) ); 
+                            break; 
+ 
+                        case 12: 
+                            y = Math.exp(b + x); 
+                            break; 
+ 
+                        default: 
+                            alert('Число: ' + x + ' введите пожалуйста 3 или 5 или 12'); 
+                            y = 'Отсутствует'; 
+                            break; 
+                        } 
+ 
+                        alert( 'Значение функции y(x)= ' + y ); 
+                    </textarea> 
+                     
+                     <div class='lab_work_start' id='button2_4'> 
+                         <p>Выполнить</p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <script src='../scripts/lab_works.js'></script> 
+</body>
+</html>
