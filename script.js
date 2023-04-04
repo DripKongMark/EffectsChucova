@@ -277,6 +277,7 @@ class ItcAccordion {
   $(document).ready(function() {
 	$('.burger-menu__inner').click(function(event) {
 		$('.burger-menu__inner,.burger-menu,.navbar').toggleClass('active');
+		$('body').toggleClass('lock')
 	});
 	$('.burger-menu__inner.active').click(function(event) {
 		$('.burger-menu__inner').toggleClass('');

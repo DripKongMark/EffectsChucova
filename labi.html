@@ -14,183 +14,64 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="burger-menu__inner">
-            <span></span><span></span><span></span>
-          </div>
-        <div class="burger-menu">
-          <a href="index.html">Главная</a>
-          <a href="gallery.html">Галерея</a>
-          <a href="interesting_facts.html">Интересные факты</a></li>
-          <a href="replies.html">Отзывы</a>
-          <a href="labi.html">Лабы</a>
-          <a href="mailto:gorbun.hog@gmail.ru">FAQ</a>
-          <a href="#" class="right">Войти</a>
-        </div>
+  <div class="navbar">
+    <div class="burger-menu__inner">
+        <span></span><span></span><span></span>
       </div>
+    <div class="burger-menu">      
+      <a href="index.html">Главная</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="interesting_facts.html">Интересные факты</a></li>
+      <a href="replies.html">Отзывы</a>
+      <a href="labi.html">Лабы</a>
+      <a href="mailto:gorbun.hog@gmail.ru">FAQ</a>
+      <a href="#" class="right">Войти</a> 
+      </div>
+  </div>
+      <div class="header">
+        <h1>Лабораторные работы</h1>
+        <p>Разработка кода операционных систем</p>
+      </div>
+      <div class="main">
+        <div class="labs">
+            <div class="header-title">
+                
+            </div>
+            <div class="header-subtitle">
+                    
+            </div>
+            <div class="lab_num">
 
-    num_one = parseInt(num_one); 
-                        num_two = parseInt(num_two); 
-                        num_three = parseInt(num_three); 
-                        num_four = parseInt(num_four); 
- 
- 
-                        if(num_one != num_two) 
-                        { 
-                            if(num_one != num_three) 
-                            { 
-                                if(num_one != num_four) 
-                                { 
-                                    alert(' Первое число отлично от других, позиция 1 ') 
-                                } 
-                            } 
-                        } 
- 
-                        if(num_two != num_one) 
-                        { 
-                            if(num_two != num_three) 
-                            { 
-                                if(num_two != num_four) 
-                                { 
-                                    alert(' Второе число отлично от других, позиция 2 ') 
-                                } 
-                            } 
-                        } 
- 
- 
-                        if(num_three != num_one) 
-                        { 
-                            if(num_three != num_two) 
-                            { 
-                                if(num_three != num_four) 
-                                { 
-                                    alert(' Третье число отлично от других, позиция 3 ') 
-                                } 
-                            } 
-                        } 
- 
-                        if(num_four != num_one) 
-                        { 
-                            if(num_four != num_two) 
-                            { 
-                                if(num_four != num_three) 
-                                { 
-                                    alert(' Четвертое число отлично от других, позиция 4 ') 
-                                } 
-                            } 
-                        } 
-                    </textarea> 
-                     
-                     <div class='lab_work_start' id='button2_2'> 
-                         <p>Выполнить</p> 
-                    </div> 
-                </div> 
-            </div> 
-             
-             
-             
-            <div class='lab_work_2_3'> 
-                <div class='lab_work_2_text'> 
-                    В лабораторной работе №2 задании 3 <br> 
-                    нужно было написать программу которая решала систему уравнений через оператор if 
-                </div> 
-                 
-                <div class='lab_work_2_code'> 
-                    <p class='lab_work_inner'>Код для задания 3</p> 
-                    <textarea> 
-                         
-                         
-                         
-                         
-                         
-                        var x = prompt('Введи x '); 
-                        var y; 
-                        var a = 3.9; 
-                        var b = 2.4; 
- 
-                        x = parseFloat(x); 
-                        a = parseFloat(a); 
-                        b = parseFloat(b); 
- 
-                        if(x <= 3) 
-                        { 
-                            y = (a + x) / (1 + Math.sqrt(Math.abs(x))); 
-                        } 
- 
-                        if(3 < x) 
-                        { 
-                            if(x <= 5) 
-                            { 
-                                y = Math.log( (a * x) + (b * x * x) ); 
-                            } 
-                        } 
- 
-                        if(x > 5) 
-                        { 
-                            y = Math.exp(b + x); 
-                        } 
- 
-                        alert( 'y(x) = ' + y ); 
-                    </textarea> 
-                     
-                     <div class='lab_work_start' id='button2_3'>
-                        <p>Выполнить</p> 
-                    </div> 
-                </div> 
-            </div> 
-             
-             
-            <div class='lab_work_2_4'> 
-                <div class='lab_work_2_text'> 
-                    В лабораторной работе №2 задании 4 <br> 
-                    нужно было написать программу которая решала систему уравнений через оператор switch case 
-                </div> 
-                 
-                <div class='lab_work_2_code'> 
-                    <p class='lab_work_inner'>Код для задания 4</p> 
-                    <textarea> 
-                         
-                         
-                         
-                         
-                         
-                        var x = prompt('Введи x'); 
-                        var y; 
-                        var a = 3.9; 
-                        var b = 2.4; 
-                        x = parseInt(x); 
-                        a = parseFloat(a); 
-                        b = parseFloat(b); 
-                        switch(x) 
-                        { 
- 
-                        case 3: 
-                            y = (a + x) / (1 + Math.sqrt(Math.abs(x))); 
-                            break; 
- 
-                        case 5: 
-                            y = Math.log( (a * x) + (b * x * x) ); 
-                            break; 
- 
-                        case 12: 
-                            y = Math.exp(b + x); 
-                            break; 
- 
-                        default: 
-                            alert('Число: ' + x + ' введите пожалуйста 3 или 5 или 12'); 
-                            y = 'Отсутствует'; 
-                            break; 
-                        } 
- 
-                        alert( 'Значение функции y(x)= ' + y ); 
-                    </textarea> 
-                     
-                     <div class='lab_work_start' id='button2_4'> 
-                         <p>Выполнить</p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-        <script src='../scripts/lab_works.js'></script> 
-</body>
+            </div>
+            <div class="lab_title">
+
+            </div>
+            <div class="lab_text">
+
+            </div>
+            <div class='lab_work_start' id='button2_2'>
+                <p>Выполнить</p>
+            </div>
+            
+        </div>
+        <div class="labi_ub">
+            <div id= "laba1" class="first__task">
+              <div class="header__title">
+                <h2>Задание №1</h2>
+              </div>
+              <div class="lab_title"></div>
+              <div class="body__text">
+                <div class="lab__text">
+        
+                  <style>
+                    p { text-indent: 15px; }
+                  </style>
+        
+                  <p>Ну тут типо первое задание</p></div>
+                  <h2>Само задание</h2>
+                  <br>
+                  <textarea name="comment" cols="40" rows="3"></textarea></p>
+              </div>
+            </div>
+      </div>
 </html>

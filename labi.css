@@ -1,0 +1,29 @@
+.labi_ub{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.body__text{
+    display: flex;
+    flex-basis:content;
+    flex-wrap: wrap;
+}
+
+.lab__text{
+    height: auto;
+    max-width: 700px;
+    position: relative;
+    padding: 10px;
+    background: rgb(87,87,90);
+    border-radius: 10px;
+    vertical-align:bottom;
+    margin: 0 10px 10px 10px;
+}
+
+@media screen and (max-width: 706px) {
+    .lab__text{
+        margin: 10px;
+    }
+}
