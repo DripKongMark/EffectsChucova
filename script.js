@@ -294,16 +294,6 @@ class ItcAccordion {
 	if(Tc.length===1) $("textarea").get(0).value += Tc;
   });
 
-  function table_add() {
-	var nick_txt = nick_in.value;
-	var amount_numb = amount.value;
-	table_numb += 1;
-	var new_tr = document.createElement("tr");
-	new_tr.innerHTML = (`<td>${table_numb}</td><td>${nick_txt}</td><td>${amount_numb}</td>`);
-	table.appendChild(new_tr);
-  }
-
-
 var button_1, button_2, button_3, button_4;
 
 function number_1(){
@@ -397,3 +387,17 @@ button_1 = document.getElementById('number_1');
 button_2 = document.getElementById('number_2');
 button_3 = document.getElementById('number_3');
 button_4 = document.getElementById('number_4');
+
+function table_add() {
+	var name = document.getElementById("fio_input"); // взяли html элемент по id
+	var amount = document.getElementById("labi_input");
+	var obl = document.getElementById("predmet_input");
+	var table = document.getElementById("table");
+	
+	var name_txt = name.value; // выясили его значение
+	var amount_numb = amount.value;
+	var obl_txt = obl.value;
+	var new_tr = document.createElement("tr"); // создали строку таблицы
+	new_tr.innerHTML = (`<td>${name_txt}</td><td>${amount_numb}</td><td>${obl_txt}</td>`); // заполнили ёе
+	table.appendChild(new_tr); // добавили строку в таблицу на странице
+  }
