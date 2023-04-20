@@ -283,3 +283,117 @@ class ItcAccordion {
 		$('.burger-menu__inner').toggleClass('');
 	});
   });
+
+  $("#kboard").on("click", "button", function(){
+	var Tc = this.textContent;
+	if(Tc.length===1) $("textarea").get(0).value += Tc;
+  });
+
+  $("#nubex").on("click", "button", function(){
+	var Tc = this.textContent;
+	if(Tc.length===1) $("textarea").get(0).value += Tc;
+  });
+
+  function table_add() {
+	var nick_txt = nick_in.value;
+	var amount_numb = amount.value;
+	table_numb += 1;
+	var new_tr = document.createElement("tr");
+	new_tr.innerHTML = (`<td>${table_numb}</td><td>${nick_txt}</td><td>${amount_numb}</td>`);
+	table.appendChild(new_tr);
+  }
+
+
+var button_1, button_2, button_3, button_4;
+
+function number_1(){
+	alert("Привет, я программа для сравнения чётности и нечётности чисел") //приветственное сообщение
+	pervoechislo = +prompt('Введите первое целое число'); //Ввод первого числа
+	vtoroechislo = +prompt('Введите второе целое число'); //Ввод второго числа
+	pervoechislo = parseInt(pervoechislo); //перевод числа в integer
+	vtoroechislo = parseInt(vtoroechislo); //перевод числа в integer
+	if (pervoechislo% 2 != 0) { //если первое число чётное
+		if (vtoroechislo% 2 != 0) { //если второе число чётное
+			alert('TRUE') //вывод TRUE
+		} else { //иначе
+			alert('FALSE') //вывод FALSE
+		}   
+	}
+	else {
+		alert('FALSE')
+	}
+}
+
+function number_2(){
+	alert("Привет, я программа для вывода большего числа") //приветственное сообщение
+	pervoechislo = +prompt('Введите первое целое число'); //Ввод первого числа
+	vtoroechislo = +prompt('Введите второе целое число'); //Ввод второго числа
+	pervoechislo = parseInt(pervoechislo); //перевод числа в integer
+	vtoroechislo = parseInt(vtoroechislo); //перевод числа в integer
+	if (pervoechislo <= vtoroechislo) { //если первое число большк второго
+		if (vtoroechislo <= pervoechislo) { //если второе число больше первого
+			alert(pervoechislo) //вывод TRUE
+		} else { //иначе
+			alert(vtoroechislo) //вывод FALSE
+		}   
+	}
+	else {
+		alert(pervoechislo)
+	}
+}
+
+function number_3(){
+	alert('Приветствую, я программа для решение математических выражений cos и sin')
+	x = +prompt('Введите число');
+	var a = 2.7;
+	var b = -3.59;
+	if (x > 2) {
+		var y = Math.cos((a*x)**2)**3;
+		alert(`При x > 2 Ответ: ` + y);
+	}
+		else if (x <= -1) {
+			y = Math.sin(x+b/2)**2;
+			alert(`При x <= -1 Ответ: ` + y);
+	}
+		else if (-1 < x <= 2) {
+			y = Math.sqrt(2-x**2)**3;
+			alert(`При -1 < x <= 2 Ответ: ` + y);
+	}
+}
+
+function number_4(){
+	alert('Приветствую, я программа для решение математических выражений cos и sin') //Приветственное сообщение
+	var x = +prompt('Введите x ');
+var y;
+var a = 2.6;
+var b = 4.2;
+x = parseInt(x);
+a = parseFloat(a);
+b = parseFloat(b);
+
+	switch (x) {
+		case 3:
+			y = Math.cos((a*x)**2)**3;
+		break;
+
+		case -1:
+			y = Math.sin(x+b/2)**3;
+		break;
+
+		case 1:
+			y = (2-x**2)**3;
+		break;
+
+		default:
+			alert(x);
+		y = 'oтсутствует';
+		break;
+	}
+		alert(`Значение функции у(х) = ${y}`);
+}
+
+
+button_1 = document.getElementById('number_1');
+button_2 = document.getElementById('number_2');
+button_3 = document.getElementById('number_3');
+button_4 = document.getElementById('number_4');

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Chukov's Effect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic/Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="table.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu__inner">
+            <span></span><span></span><span></span>
+          </div>
+        <div class="burger-menu">      
+          <a href="index.html">Главная</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="interesting_facts.html">Интересные факты</a>
+          <a href="replies.html">Отзывы</a>
+          <a href="table.html">Таблица</a>
+          <a href="labi.html">Лабы</a>
+          <a href="mailto:gorbun.hog@gmail.ru">FAQ</a>
+          <a href="#" class="right">Войти</a> 
+          </div>
+      </div>
+<div class="header">
+  <h1>Таблица</h1>
+</div>
+    <div class="middle">
+        <table id="table">
+            <tr class="table-header">
+                <td style="width: 60px;">Место</td>
+                <td>Никнейм</td>
+                <td style="width: 150px;">Количество работ</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Veseliy_ananas228</td>
+                <td>953</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>DeadlyKiller_00</td>
+                <td>768</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Djek2004</td>
+                <td>751</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Wasyan_ProGamer</td>
+                <td>511</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Hello-World2007</td>
+                <td>505</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Anonymous_666</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>ZakBlackMage</td>
+                <td>280</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Fake_ppl</td>
+                <td>271</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>AnotherOneAcc_forFun</td>
+                <td>237</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Just_AN_Artist</td>
+                <td>149</td>
+            </tr>
+        </table>
+        <div class="enter-new-info">
+            <div class="enter-new-info__new-info">
+                <h4>Имя пользователя: </h4>
+                <input id="nickname-input">
+            </div>
+            <div class="enter-new-info__new-info">
+                <h4>Количество работ: </h4>            
+                <input id="amount-input" type="number" value="0" min="0">
+            </div>
+            <button onclick="table_add()">Добавить</button>
+        </div>
+    </div>
+    <div id="blackout" class="blackout" onclick="hide_show_blackout()" style="display: none;"></div>
+    <div><a id="idTop"></a></div>
+  <div><a class="onTop" href="#">☭</a></div> 
+</div>
+
+<div class="footer">
+  <h2>All rights are reserved</h2>
+  <p>&copy; 2023 - Страница великого феномена</p>
+  <script src="script.js"></script>
+    <a title="Facebook" href="" target="_blank"><i class="fa fa-vk"></i></a>
+    <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+    <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+</div>
+<script src="../!effectchucova/script.js"></script>
+<script>
+  new ItcAccordion(document.querySelector('.accordion'), {
+    alwaysOpen: true
+  });
+</script>
+</body>
+</html>
