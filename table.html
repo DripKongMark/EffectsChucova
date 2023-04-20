@@ -31,73 +31,53 @@
 <div class="header">
   <h1>Таблица</h1>
 </div>
-    <div class="middle">
-        <table id="table">
-            <tr class="table-header">
-                <td style="width: 60px;">Место</td>
-                <td>Никнейм</td>
-                <td style="width: 150px;">Количество работ</td>
+    <div class="main">
+        <table id="table" border="2" bordercolor="#cc9f13">
+            <caption>Таблица студентов и их работ</caption>
+            <tr> 
+            <th>ФИО</th> 
+            <th>Кол-во лаб сдано</th> 
+            <th>Предметная область</th>
+            </tr> 
+            <tr> 
+            <td>Чуков Тимер Андреевич</td> 
+            <td>0</td>
+            <td>Операционные системы и среды</td> 
+            </tr> 
+            <tr> 
+            <td>Белов Никита Олегович</td> 
+            <td>5</td> 
+            <td>Разработка кода информационных систем</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Veseliy_ananas228</td>
-                <td>953</td>
+            <td>Дубинов Артём Матвеевич</td> 
+            <td>8</td> 
+            <td>Базы данных</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>DeadlyKiller_00</td>
-                <td>768</td>
-            </tr>
+            <td>Дуров Алексей Петрович</td> 
+            <td>12</td> 
+            <td>Основы алгоритмизации и программирования</td>
+            </tr> 
             <tr>
-                <td>3</td>
-                <td>Djek2004</td>
-                <td>751</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Wasyan_ProGamer</td>
-                <td>511</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Hello-World2007</td>
-                <td>505</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Anonymous_666</td>
-                <td>350</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>ZakBlackMage</td>
-                <td>280</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Fake_ppl</td>
-                <td>271</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>AnotherOneAcc_forFun</td>
-                <td>237</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Just_AN_Artist</td>
-                <td>149</td>
-            </tr>
-        </table>
+            <td>Кунинов Пётр Генадиевич</td> 
+            <td>7</td> 
+            <td>Пакеты прикладных программ</td>
+            </tr> 
+            </table>
         <div class="enter-new-info">
             <div class="enter-new-info__new-info">
-                <h4>Имя пользователя: </h4>
-                <input id="nickname-input">
+                <h4>ФИО человека: </h4>
+                <input id="fio_input">
             </div>
-            <div class="enter-new-info__new-info">
-                <h4>Количество работ: </h4>            
-                <input id="amount-input" type="number" value="0" min="0">
+            <div class="new_value">
+                <h4>Сдано работ: </h4>            
+                <input id="labi_input" type="number" value="0" min="0">
             </div>
+            <div class="predmet_new">
+              <h4>Предметная область: </h4>
+              <input id="predmet_input">
+          </div>
             <button onclick="table_add()">Добавить</button>
         </div>
     </div>
@@ -116,7 +96,7 @@
     <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
     <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
 </div>
-<script src="../!effectchucova/script.js"></script>
+<script src="script.js"></script>
 <script>
   new ItcAccordion(document.querySelector('.accordion'), {
     alwaysOpen: true
