@@ -1,317 +1,50 @@
-var pict1 = document.getElementById('gallery-body__item-1')
-var pict2 = document.getElementById('gallery-body__item-2')
-var pict3 = document.getElementById('gallery-body__item-3')
-var pict4 = document.getElementById('gallery-body__item-4')
-var pict5 = document.getElementById('gallery-body__item-5')
-var pict6 = document.getElementById('gallery-body__item-6')
-var pict7 = document.getElementById('gallery-body__item-7')
-var pict8 = document.getElementById('gallery-body__item-8')
-var pict9 = document.getElementById('gallery-body__item-9')
-var pict10 = document.getElementById('gallery-body__item-10')
-var pict11 = document.getElementById('gallery-body__item-11')
-var pict12 = document.getElementById('gallery-body__item-12')
 
-var head_gallery = document.getElementById('header-gallery')
+    let position = 0;
+    const slidesToShow = 1; // сколько элиментов показывать, можешь поэксперементировать , но нахера
+    const slidesToScroll = 1; // сколько скорллить. тоже можно эксперементиовать, но лучше не стоит
+    const container = document.querySelector('.slider-container'); //контейнер где фоточки и страдание над ними 
+    const track = document.querySelector('.slider-track'); //чекер того где картинка (по идеи)
+    const btnPrev = document.querySelector('.btn-prev'); //кнопка сюда
+    const btnNext = document.querySelector('.btn-next'); //кнопка туда
+    const items = document.querySelectorAll('.slider-item'); //сами картиночки
+    const itemsCount = items.length; // длина картинки-залупинки
+    const itemWidth = container.clientWidth / slidesToShow; //ширина штуки картинка
+    const movePosition = slidesToScroll * itemWidth;
 
-var container_gallery = document.getElementById('gallery-body')
+    //отыскание MinWidth
+    items.forEach((item) => {
+        item.style.minWidth = `${itemWidth}px `;
+    });
 
-var full_gallery = document.getElementById('gallery-slider')
+    //скролл вперёд
+    btnNext.addEventListener('click' ,() =>{
+        const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
 
-var pict_container = document.getElementById('gallery-slider__container')
+        position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
 
-var exit_gallery = document.getElementById('exit-gallery')
-
-var pict_next = document.getElementById('next-pict')
-
-var pict_prev = document.getElementById('prev-pict')
-
-var pict_index = 0;
-
-function showPict1(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('../img/img1.jpg')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 1;
-}
-
-
-function showPict2(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('../img/img2.jpeg')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 2;
-}
-
-
-function showPict3(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 3;
-}
-
-
-function showPict4(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 4;
-}
-
-
-
-function showPict5(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 5;
-}
-
-
-function showPict6(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 6;
-}
-
-
-function showPict7(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 7;
-}
-
-
-function showPict8(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 8;
-}
-
-
-function showPict9(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 9;
-}
-
-
-function showPict10(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 10;
-}
-
-
-function showPict11(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 11;
-}
-
-
-function showPict12(){
-    head_gallery.style.display = 'none';
-    container_gallery.style.display = 'none';
-    full_gallery.style.display = 'block';
-    pict_container.style.background = "url('')";
-    pict_container.style.backgroundSize = 'cover';
-    pict_index = 12;
-}
-
-
-function exitGallery(){
-    head_gallery.style.display = 'flex';
-    container_gallery.style.display = 'flex';
-    full_gallery.style.display = 'none';
-}
-
-function nextPict() {
+        setPosition();
+        checkBtns();
+    })
     
-    if(pict_index == 0){
-        pict_container.style.background = "url('../img/img1.jpg')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 1){
-        pict_container.style.background = "url('../img/img2.jpeg')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 2){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 3){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    
-    if(pict_index == 4){
-        pict_container.style.background = 
-        "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 5){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 6){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 7){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 8){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 9){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 10){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 11){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 12){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-        pict_index = 0;
-    }
-    
-    pict_index++;
-    
-}
+    //скролл назад
+    btnPrev.addEventListener('click' ,() =>{
+        const itemsLeft = Math.abs(position) / itemWidth;
 
-function prevPict() {
-    
-    pict_index--;
-    
-    if(pict_index == 12){
-        pict_container.style.background = "url('../img/img1.jpg')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 11){
-        pict_container.style.background = "url('../img/img2.jpeg')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 10){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 9){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 8){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 7){
-        pict_container.style.background = "url('../img/gallery/luvr.webp')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 6){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 5){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 4){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 3){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 2){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 1){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-    }
-    
-    if(pict_index == 0){
-        pict_container.style.background = "url('')";
-        pict_container.style.backgroundSize = 'cover';
-        pict_index = 12;
-    }
-}
+        position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
 
-pict1.addEventListener('click', showPict1)
-pict2.addEventListener('click', showPict2)
-pict3.addEventListener('click', showPict3)
-pict4.addEventListener('click', showPict4)
-pict5.addEventListener('click', showPict5)
-pict6.addEventListener('click', showPict6)
-pict7.addEventListener('click', showPict7)
-pict8.addEventListener('click', showPict8)
-pict9.addEventListener('click', showPict9)
-pict10.addEventListener('click', showPict10)
-pict11.addEventListener('click', showPict11)
-pict12.addEventListener('click', showPict12)
+        setPosition();
+        checkBtns();
+    })
 
-pict_prev.addEventListener('click', prevPict)
-pict_next.addEventListener('click', nextPict)
-exit_gallery.addEventListener('click', exitGallery)
+    const setPosition = () => {
+        track.style.transform = `translateX(${position}px)`   
+    };
+
+    //просмотр на то дошла ли карусель до конца или нет
+    const checkBtns = () => {
+        // btnPrev.style.disabled = 
+        btnPrev.disabled =  position === 0;
+        btnNext.disabled =  position <= -(itemsCount - slidesToShow) * itemWidth;       
+    };
+
+    checkBtns();

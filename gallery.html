@@ -34,18 +34,30 @@
   <p>Фотокарточки</p>
 </div>
 
-<div class="main">
-  <div id="gall">
-    <img src="./chukov/1.jpg" tabindex="0" border="3"/>		
-    <img src="./chukov/2.jpg" tabindex="0" border="3"/>	
-    <img src="./chukov/3.jpg" tabindex="0" border="3"/>
-    <img src="./chukov/4.jpg" tabindex="0" border="3"/>
-    <img src="./chukov/5.jpg" tabindex="0" border="3"/>		
-    <img src="./chukov/6.jpg" tabindex="0" border="3"/>	
-    <img src="./chukov/7.jpg" tabindex="0" border="3"/>
-    <img src="./chukov/8.jpg" tabindex="0" border="3"/>		
-    </div>
-</div>
+<div class="wrapper">
+  <!--залупный контейнер в котором кнопки и слайдер-->
+    <div class="wrapper-slider">
+      <!-- оболочка слайдер-->
+        <div class="slider-container">
+          <!--тело слайдера-->
+            <div class="slider-track">
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+            </div>
+        </div>
+        <!--мммм кнопочки-->
+        <button class="btn-prev slider-buttons"><div class="arrow arrow-left"></div></button>
+        <button class="btn-next slider-buttons"><div class="arrow arrow-right"></div></button>
+        
+    </div>    
+  </div>
 
 <div><a id="idTop"></a></div>
 <div><a class="onTop" href="#" >☭</a></div> 
@@ -62,7 +74,7 @@
     <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
 </div>
 
-
-<script>
-  
-</script>
+   
+<script src='gallery.js'></script>
+</body>
+</html>

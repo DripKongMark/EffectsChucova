@@ -1,70 +1,82 @@
-/* Тута стиля для изображения */
-#gall {
-  display: flex;
-  position: relative;
-  padding-top: 50%;
-  -moz-user-select: none; user-select: none;
+.wrapper{ /* контейнер сия говна */
+  width: 1000px;
+  margin: 0 auto;
 }
-#gall img {
+
+/* эту херню лучше не трогать , вообще не трогать , СЕКРЕТНО тут инфа о том что эта херня флекс бокс и его настройка */
+.wrapper-slider{ 
   display: flex;
-  position: absolute;
-  top: 20%;
-  left: 12.5%;
-  max-width: 24.5%;
-  max-height: 49.5%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  cursor: zoom-in;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items: center;
+
+}
+/* тут я ставлю сюда на 1 место в цепочки flex бокса */
+.btn-prev{
+  order: 1;
+}
+/* тут я ставлю туда на последнее место в флекс бокс цепочке */
+.btn-next{
+  order: 3;
+}
+/* Slider */
+/* Тут отключение стиля у кнопки */
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+/* Галочка кнопка , её можно удоптировать для молее маленьких устройст укорачивая width и height */
+.arrow {
+  width: 60px;
+  height: 60px;
+  border-top: 10px solid rgb(221,203,142);
+  border-right: 10px solid rgb(221,203,142);
+  margin-right: 60px;
+}
+/* правая галочка кнопка */
+.arrow-right {
+  transform: rotate(45deg);
+}
+/* левая галочка кнопка */
+.arrow-left {
+  transform: rotate(-135deg);
+}
+/* по сути это то , что за ним , ЕГО НЕ ТРОГАТЬ ВООБЩЕ ОН НИ ЗАЧТО В АДАПТИВЕ НЕ ВЛИЯЕТ ААААА */
+.slider-container{
+  overflow: hidden;
+  order: 2;
+  margin: 50px 20px;
+}
+/* тут хз , его можно легооооонечко потрогать */
+.slider-track{
+  display: flex;
+  background-color: yellow;
   transition: .2s;
 }
-
-
-#gall img:nth-child(4n-2) {left: 37.5%;}
-#gall img:nth-child(4n-1) {left: 62.5%;}
-#gall img:nth-child(4n) {left: 87.5%;}
-#gall img:nth-child(n+5) {top: 75%;}
-
-#gall img:focus {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  max-width: 100%;
-  max-height: 100%;
-  outline: none;
-  pointer-events: none;
+/* окошко , оно и адаптируется , на ним можно ставить эксперементы */
+.slider-item{
+  height: 600px;
+  min-width: 1000px;
 }
-#gall img:focus ~ div {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(2px);
-  cursor: zoom-out;
-}
-
-.gallery img{
-margin:5px; /* внешние отступы картинок */
-border:3px solid #fff; /* рамка картинок */
-}
-a.photo:hover img{
-border:3px solid #034F80; /* изменение цвета рамки при наведении на картинку */
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-@media screen and (max-width: 706px) {
-  .gall{
-      margin: 10px;
-  }
+/* ТУТА КАРТИНОЧКИ УХХХХ ДААААААААА УРА КАРТИНОЧКИ , ВЫ ЧТО ДУМАЛИ В СЛАЙДЕРЕ НЕТ ПИКЧ АХХАХАА */
+.slider-item:nth-child(1){ background-image:url(./Chucov/1.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(2){ background-image: url(./Chucov/2.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(3){ background-image:url(./Chucov/3.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(4){ background-image:url(./Chucov/4.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(5){ background-image: url(./Chucov/5.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(6){ background-image:url(./Chucov/6.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(7){ background-image:url(./Chucov/7.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(8){ background-image: url(./Chucov/8.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(9){ background-image:url(./Chucov/9.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(10){ background-image:url(./Chucov/10.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(11){ background-image:url(./Chucov/11.jpg); background-size: 100% 100%;}
+/* по..й на это , это так мусор , по приколу оставил */
+.slider-buttons{
+  text-align: center;
 }
