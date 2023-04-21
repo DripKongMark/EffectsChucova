@@ -35,8 +35,8 @@ button{
 .arrow {
   width: 40px;
   height: 40px;
-  border-top: 5px solid rgb(221,203,142);
-  border-right: 5px solid rgb(221,203,142);
+  border-top: 5px solid rgb(255,213,11);
+  border-right: 5px solid rgb(255,213,11);
   margin-right: 20px;
 }
 /* правая галочка кнопка */
@@ -92,8 +92,8 @@ button{
   .arrow{
     width: 40px;
     height: 40px;
-    border-top: 5px solid rgb(221,203,142);
-    border-right: 5px solid rgb(221,203,142);
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 19px;
@@ -123,8 +123,8 @@ button{
   .arrow{
     width: 40px;
     height: 40px;
-    border-top: 5px solid rgb(221,203,142);
-    border-right: 5px solid rgb(221,203,142);
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 19px;
@@ -154,8 +154,8 @@ button{
   .arrow{
     width: 40px;
     height: 40px;
-    border-top: 5px solid rgb(221,203,142);
-    border-right: 5px solid rgb(221,203,142);
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 19px;
@@ -185,8 +185,8 @@ button{
   .arrow{
     width: 40px;
     height: 40px;
-    border-top: 5px solid rgb(221,203,142);
-    border-right: 5px solid rgb(221,203,142);
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 19px;
@@ -216,8 +216,8 @@ button{
   .arrow{
     width: 25px;
     height: 25px;
-    border-top: 5px solid rgb(221,203,142);
-    border-right: 5px solid rgb(221,203,142);
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 19px;
@@ -248,8 +248,8 @@ button{
   .arrow{
     width: 25px;
     height: 25px;
-    border-top: 4px solid rgb(221,203,142);
-    border-right: 4px solid rgb(221,203,142);
+    border-top: 4px solid rgb(255,213,11);
+    border-right: 4px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 7px;
@@ -278,8 +278,8 @@ button{
   .arrow{
     width: 15px;
     height: 15px;
-    border-top: 4px solid rgb(221,203,142);
-    border-right: 4px solid rgb(221,203,142);
+    border-top: 4px solid rgb(255,213,11);
+    border-right: 4px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 5px;
@@ -308,8 +308,8 @@ button{
   .arrow{
     width: 20px;
     height: 20px;
-    border-top: 4px solid rgb(221,203,142);
-    border-right: 4px solid rgb(221,203,142);
+    border-top: 4px solid rgb(255,213,11);
+    border-right: 4px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 5px;
@@ -338,8 +338,8 @@ button{
   .arrow{
     width: 13px;
     height: 13px;
-    border-top: 2px solid rgb(221,203,142);
-    border-right: 2px solid rgb(221,203,142);
+    border-top: 2px solid rgb(255,213,11);
+    border-right: 2px solid rgb(255,213,11);
   }
   .btn-prev.slider-buttons{
     width: 5px;
