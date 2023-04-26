@@ -167,6 +167,17 @@ a.button:hover {
     margin: 0 10px 10px 10px;
 }
 
+.text__item a:Visited{
+    color: rgb(164,224,236);
+    /* rgb(255,213,11) */
+    size:55px;
+}
+
+.text__item a:active{
+    color: white;
+    size:35px;
+}
+
 @media screen and (max-width: 706px) {
     .text__replie{
         margin: 10px;
